@@ -7,6 +7,7 @@ This repository contains solutions to git exercise
 ## Exercise 1:
 
 ```bash
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents$ mkdir gym-git-exercises && cd gym-git-exercises
 thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git init
 Initialized empty Git repository in /home/thegym/Documents/gym-git-exercises/.git/
 thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git branch -M main
