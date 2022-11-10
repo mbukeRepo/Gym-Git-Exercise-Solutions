@@ -110,3 +110,38 @@ HEAD is now at a79981b feat: added home and about page
 ## Bundle 2:
 
 ## Exercise 1:
+
+## Bundle 3:
+
+## Exercise 1:
+
+```bash
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git checkout -b ft/faq-page
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ nano team.html
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git add faq.html
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git commit -m "feat: added faq page"
+[ft/faq-page 6df171d] feat: added faq page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 faq.html
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git checkout main
+Switched to branch 'main'
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git log --oneline
+0a58f74 (HEAD -> ft/team-page, origin/ft/team-page) feat: added team.html
+914f43d (origin/main, main, ft/contact-page) feat: merged ft/service-redesign with main
+0f80041 feat: updated service.html
+5c1754d feat: added service.html
+bbd1499 (origin/ft/service-redesign, ft/service-redesign) feat: added service list
+652f43f (dev) starting bundle 2
+a79981b (origin/dev) feat: added home and about page
+bce0cdb fix: added remaining command for exercise 1
+09271fc feat: added solution to first exercise
+6abd885 feat: added some content to the README.md
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git cherry-pick 0a58f74
+[ft/contact-page 9311567] feat: added team.html
+ Date: Wed Nov 9 23:19:08 2022 +0200
+ 1 file changed, 11 insertions(+)
+ create mode 100644 team.html
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ nano contact.html
+```
