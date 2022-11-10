@@ -109,11 +109,11 @@ HEAD is now at a79981b feat: added home and about page
 
 ## Bundle 2:
 
-## Exercise 1:
+### Exercise 1:
 
 ## Bundle 3:
 
-## Exercise 1:
+### Exercise 1:
 
 ```bash
 thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git checkout -b ft/faq-page
@@ -144,4 +144,47 @@ thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git cherry-pic
  1 file changed, 11 insertions(+)
  create mode 100644 team.html
 thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ nano contact.html
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git add contact.html
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git commit -m "feat: added contact page"
+[ft/contact-page cd333ae] feat: added contact page
+ 1 file changed, 15 insertions(+)
+ create mode 100644 contact.html
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git push origin ft/contact-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 459 bytes | 229.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/mbukeRepo/Gym-Git-Exercise-Solutions.git
+* [new branch]      ft/contact-page -> ft/contact-page
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ nano faq.html
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git add faq.html
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git commit -m "feat: added faq page "
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git push origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 459 bytes | 229.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/mbukeRepo/Gym-Git-Exercise-Solutions.git
+* [new branch]      ft/faq-page -> ft/faq-page
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git revert 0a58f74
+[ft/faq-page 398f570] Revert "feat: added team.html"
+1 file changed, 10 insertions(+), 15 deletions(-)
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git push origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 459 bytes | 229.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/mbukeRepo/Gym-Git-Exercise-Solutions.git
+* [new branch]      ft/faq-page -> ft/faq-page
 ```
