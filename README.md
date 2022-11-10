@@ -347,3 +347,154 @@ To https://github.com/mbukeRepo/Gym-Git-Exercise-Solutions.git
  + 1f0b6f1...4b06eea ft/home-page-redesign -> ft/home-page-redesign
 
 ```
+
+## Bundle 4
+
+### Exercise 1:
+
+```bash
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git checkout main
+Already on 'main'
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git remote add git-copy https://github.com/mbukeRepo/test.git
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git remote
+git-copy
+origin
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ ls
+about.html  home.html  README.md  service.html
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ nano home.html
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git add home.html
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git commit -m "feat: added content to home page"
+[main 7f9f397] feat: added content to home page
+ 1 file changed, 1 insertion(+)
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git push origin main
+Username for 'https://github.com': mbukeRepo
+Password for 'https://mbukeRepo@github.com':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 329 bytes | 329.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/mbukeRepo/Gym-Git-Exercise-Solutions.git
+   20e42ba..7f9f397  main -> main
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git remote
+git-copy
+origin
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git push  git-copy main
+Username for 'https://github.com': mbukeRepo
+Password for 'https://mbukeRepo@github.com':
+Enumerating objects: 46, done.
+Counting objects: 100% (46/46), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (42/42), done.
+Writing objects: 100% (46/46), 6.85 KiB | 584.00 KiB/s, done.
+Total 46 (delta 17), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (17/17), done.
+To https://github.com/mbukeRepo/test.git
+ * [new branch]      main -> main
+```
+
+### Exercise 2
+
+```bash
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ nano footer.html
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git branch
+  dev
+  ft/bundle-2
+  ft/contact-page
+  ft/faq-page
+* ft/footer
+  ft/home-page-redesign
+  ft/service-redesign
+  ft/team-page
+  main
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ ls
+about.html  footer.html  home.html  README.md  service.html
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git add footer.html
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git commit -m "feat: added footer"
+[ft/footer 444b3c5] feat: added footer
+ 1 file changed, 8 insertions(+)
+ create mode 100644 footer.html
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ nano header.html
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git add header.html
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git commit -m "feat: added header page"
+[ft/footer d8456a8] feat: added header page
+ 1 file changed, 6 insertions(+)
+ create mode 100644 header.html
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git branch
+  dev
+  ft/bundle-2
+  ft/contact-page
+  ft/faq-page
+* ft/footer
+  ft/home-page-redesign
+  ft/service-redesign
+  ft/team-page
+  main
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git push origin ft/footer
+Username for 'https://github.com': mbukeRepo
+Password for 'https://mbukeRepo@github.com':
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 694 bytes | 231.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/mbukeRepo/Gym-Git-Exercise-Solutions/pull/new/ft/footer
+remote:
+To https://github.com/mbukeRepo/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/footer -> ft/footer
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git checkout main
+Switched to branch 'main'
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git merge --squash ft/footer
+Updating 7f9f397..d8456a8
+Fast-forward
+Squash commit -- not updating HEAD
+ footer.html | 8 ++++++++
+ header.html | 6 ++++++
+ 2 files changed, 14 insertions(+)
+ create mode 100644 footer.html
+ create mode 100644 header.html
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git status
+On branch ft/squashing
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   footer.html
+	new file:   header.html
+
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git commit -m "footer changes squashing"
+[ft/squashing badc4dd] footer changes squashing
+ 2 files changed, 14 insertions(+)
+ create mode 100644 footer.html
+ create mode 100644 header.html
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git push
+fatal: The current branch ft/squashing has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/squashing
+
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git push --set-upstream origin ft/squashing
+Username for 'https://github.com': mbukeRepo
+Password for 'https://mbukeRepo@github.com':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 524 bytes | 262.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/mbukeRepo/Gym-Git-Exercise-Solutions/pull/new/ft/squashing
+remote:
+To https://github.com/mbukeRepo/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/squashing -> ft/squashing
+Branch 'ft/squashing' set up to track remote branch 'ft/squashing' from 'origin'.
+```
