@@ -2,7 +2,7 @@
 
 This repository contains solutions to git exercise
 
-## Bundle 1
+## Bundle 1:
 
 ## Exercise 1:
 
@@ -106,3 +106,7 @@ Dropped refs/stash@{0} (7f8b195ed67e8e3cda8e0dbd80d84f3c11ad30db)
 thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git reset --hard
 HEAD is now at a79981b feat: added home and about page
 ```
+
+## Bundle 2:
+
+## Exercise 1:
