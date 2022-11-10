@@ -498,3 +498,72 @@ To https://github.com/mbukeRepo/Gym-Git-Exercise-Solutions.git
  * [new branch]      ft/squashing -> ft/squashing
 Branch 'ft/squashing' set up to track remote branch 'ft/squashing' from 'origin'.
 ```
+
+## Bundle 5
+
+### Exercise 1:
+
+Done on GitHub
+
+### Exercise 2:
+
+```bash
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents$ git clone https://github.com/mbukeRepo/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (107/107), done.
+remote: Compressing objects: 100% (101/101), done.
+remote: Total 107 (delta 5), reused 104 (delta 4), pack-reused 0
+Receiving objects: 100% (107/107), 1.95 MiB | 43.00 KiB/s, done.
+Resolving deltas: 100% (5/5), done.
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents$ cd git-cafe*
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/git-cafe-exercise$ ls
+bat  images        index-2.html  index-4.html  js
+css  index-1.html  index-3.html  index.html    README.md
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/git-cafe-exercise$ nano index.html
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/git-cafe-exercise$ code .
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/git-cafe-exercise$ git add index.html
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/git-cafe-exercise$ git commit -m "feat: changed welcome to our place to welcome to our restaurant"
+[main 2f668f6] feat: changed welcome to our place to welcome to our restaurant
+ 1 file changed, 448 insertions(+), 288 deletions(-)
+ rewrite index.html (88%)
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/git-cafe-exercise$ git origin
+git: 'origin' is not a git command. See 'git --help'.
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/git-cafe-exercise$ git remote
+origin
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/git-cafe-exercise$ git remote origin main
+error: Unknown subcommand: origin
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/git-cafe-exercise$ git branch
+* main
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/git-cafe-exercise$ git push
+Username for 'https://github.com': mbukeRepo
+Password for 'https://mbukeRepo@github.com':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.57 KiB | 403.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/mbukeRepo/git-cafe-exercise.git
+   d1d3f9c..2f668f6  main -> main
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/git-cafe-exercise$ ls
+bat  images        index-2.html  index-4.html  js
+css  index-1.html  index-3.html  index.html    README.md
+```
