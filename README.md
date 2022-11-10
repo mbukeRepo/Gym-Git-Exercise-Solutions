@@ -172,7 +172,49 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/mbukeRepo/Gym-Git-Exercise-Solutions.git
 * [new branch]      ft/service-redesign -> ft/service-redesign
 thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git checkout main
-thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$
+Switched to branch 'main'
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ nano service.html
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git add service.html
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git commit -m "feat: updated service page"
+[main 6df171d] feat: updated service page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 service.html
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git push origin main
+Username for 'https://github.com': mbukeRepo
+Password for 'https://mbukeRepo@github.com':
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 3.07 KiB | 629.00 KiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/mbukeRepo/Gym-Git-Exercise-Solutions.git
+ + 1f0b6f1...4b06eea main -> main
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git diff
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git checkout main
+Switched to branch 'main'
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git merge ft/service-redesign
+Auto-merging notes
+CONFLICT (content): Merge conflict in notes
+Automatic merge failed; fix conflicts and then commit the result.
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git add .
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git commit -m "fix: resolved conflicts and merge"
+[main 6df171d] fix: resolved conflicts and merge
+thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git push origin ft/service-redesign
+Username for 'https://github.com': mbukeRepo
+Password for 'https://mbukeRepo@github.com':
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 3.07 KiB | 629.00 KiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/mbukeRepo/Gym-Git-Exercise-Solutions.git
+ + 1f0b6f1...4b06eea ft/service-redesign -> ft/service-redesign
 ```
 
 ## Bundle 3:
@@ -181,6 +223,7 @@ thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$
 
 ```bash
 thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
 thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ nano team.html
 thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git add faq.html
 thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git commit -m "feat: added faq page"
@@ -262,13 +305,14 @@ To https://github.com/mbukeRepo/Gym-Git-Exercise-Solutions.git
 thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git checkout -b ft/home-page-redesign
 Switched to a new branch 'ft/home-page-redesign'
 thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git checkout main
-Switched to branch main
+Switched to branch 'main'
 thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ nano README.md
 thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git add README.md
 thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git commit -m "feat: updated README.md"
 [main 1e36623] feat: updated README.md
  1 file changed, 45 insertions(+), 2 deletions(-)
 thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git checkout main
+Switched to branch 'main'
 thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git push origin main
 Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
@@ -278,8 +322,9 @@ Writing objects: 100% (3/3), 459 bytes | 229.00 KiB/s, done.
 Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/mbukeRepo/Gym-Git-Exercise-Solutions.git
-* [new branch]      main -> main
+ + 1f0b6f1...4b06eea ft/home-page-redesign -> ft/home-page-redesign
 thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
 thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git rebase main
 Successfully rebased and updated refs/heads/ft/home-page-redesign
 thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ nano home.html
@@ -289,13 +334,16 @@ thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git commit -m 
  1 file changed, 11 insertions(+)
  create mode 100644 home.html
 thegym@thegym-ThinkPad-T470s-W10DG:~/Documents/gym-git-exercises$ git push origin ft/home-page-redesign
-Enumerating objects: 4, done.
-Counting objects: 100% (4/4), done.
+Username for 'https://github.com': mbukeRepo
+Password for 'https://mbukeRepo@github.com':
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
 Delta compression using up to 4 threads
-Compressing objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 459 bytes | 229.00 KiB/s, done.
-Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 3.07 KiB | 629.00 KiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
 To https://github.com/mbukeRepo/Gym-Git-Exercise-Solutions.git
-* [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+ + 1f0b6f1...4b06eea ft/home-page-redesign -> ft/home-page-redesign
+
 ```
